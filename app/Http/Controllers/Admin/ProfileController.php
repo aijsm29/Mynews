@@ -27,4 +27,10 @@ class ProfileController extends Controller
     {
         return redirect('admin/profile/edit');
     }
+    
+     public function profile(Request $request)
+     {
+         // admin/profile/createにリダイレクトする
+        return redirect('admin/profile/create');
+    }
 }
