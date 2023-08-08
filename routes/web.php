@@ -27,8 +27,8 @@ Route::controller(NewsController::class)->prefix('admin')->name('admin.')->middl
 use App\Http\Controllers\Admin\ProfileController;
 Route::controller(ProfileController::class)->prefix('admin')->name('admin.')->middleware('auth')->group(function() 
 {
-    Route::get('profile/create', 'add')->middleware('auth');
-    Route::get('profile/edit', 'edit')->middleware('auth');
+    Route::get('profile/create', 'add');
+    Route::get('profile/edit', 'edit');
     Route::post('profile/create','create')->name('profile.create');
     Route::post('profile/edit','update')->name('profile.edit');
 });
