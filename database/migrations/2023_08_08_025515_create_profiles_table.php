@@ -14,7 +14,7 @@ return new class extends Migration
      // name と gender と hobby と introduction を追記 
     public function up()
     {
-        Schema::create('profiles_tabel', function (Blueprint $table) {
+        Schema::create('profiles', function (Blueprint $table) {
             $table->id();
             $table->string('name');// プロフィールの名前を保存するカラム
             $table->string('gender');// プロフィールの性別を保存するカラム
@@ -31,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('profiles_tabel');
+        Schema::dropIfExists('profiles');
     }
 };
