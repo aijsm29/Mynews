@@ -31,7 +31,7 @@
             <nav class="navbar navbar-expand-md navbar-dark navbar-laravel">
                 <div class="container">
                     <a class="navbar-brand" href="{{ url('/') }}">
-                       config('app.name', 'laravel') }}
+                      {{ config('app.name', 'laravel') }}
                     </a>  
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                        data-target="#navbarSupportedContent" aria-controls="navbarSuppotedContent"
