@@ -3,14 +3,14 @@
 
 
 {{-- admin.blade.phpの@yield('title')に'ニュースの新規作成'を埋め込む --}}
-@section('title', 'プロフィールの紹介')
+@section('title', 'My Profile')
 
 {{-- admin.blade.phpの@yield('content')に以下のタグを埋め込む --}}
 @section('content')
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
-                <h2>プロフィール紹介</h2>
+                <h2>My Profile</h2>
                 <form action="{{ route('admin.profile.create') }}" method="post" enctype="multipart/form-data">
 
                     @if (count($errors) > 0)
